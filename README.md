@@ -6,7 +6,7 @@ This project was created to practice with `RxJS` and `Mobx`. The main idea is to
 
 - `Typescript` - types for JS (https://www.typescriptlang.org)
 - `ReactJS` - create components (https://react.dev)
-- `SASS/SCSS` - style components https://sass-lang.com
+- `SASS/SCSS` - style components (https://sass-lang.com)
 - `RxJS` - mock API (https://www.learnrxjs.io)
 - `Mobx` - store (https://mobx.js.org)
 
@@ -25,7 +25,6 @@ This project was created to practice with `RxJS` and `Mobx`. The main idea is to
 ├──── App.tsx               # The main component
 ├──── AppContext.tsx        # The main context that loads store to share with child components
 ├──── index.tsx             # Init file to inject components into html and to create store
-├── LICENSE
 └── README.md
 ```
 
