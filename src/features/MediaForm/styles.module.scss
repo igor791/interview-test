@@ -1,0 +1,28 @@
+@import "src/styles/variables";
+
+.container {
+  background-color: $bg;
+  padding: 8px;
+  color: $text;
+
+  &:hover {
+    background-color: $bg-hover;
+    color: $text-hover;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+
+    & > * {
+      margin-bottom: 8px;
+    }
+
+    .actions {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-top: 8px;
+    }
+  }
+}

@@ -1,0 +1,34 @@
+@import "src/styles/variables";
+
+.default {
+  border: none;
+  cursor: pointer;
+  font-size: $fz-sm;
+  line-height: $lh-sm;
+
+  &.primary {
+    background-color: $action-bg;
+    color: $action-text;
+
+    &:hover {
+      background-color: $action-bg-hover;
+      color: $action-text-hover;
+    }
+  }
+
+  &.secondary {
+    background-color: green;
+    color: $text;
+  }
+
+  &.danger {
+    background-color: red;
+    color: $text;
+  }
+
+  &.outline {
+    border: 1px solid $text;
+    color: $text;
+    background-color: transparent;
+  }
+}

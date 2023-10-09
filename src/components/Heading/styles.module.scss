@@ -1,0 +1,25 @@
+@import "src/styles/variables";
+
+.heading {
+  color: inherit;
+  font-weight: $fw-bold;
+  margin: 0;
+
+  &.h1 {
+    font-size: $fz-lg;
+    line-height: $lh-lg;
+  }
+
+  &.h2,
+  &.h3 {
+    font-size: $fz-md;
+    line-height: $lh-md;
+  }
+
+  &.h4,
+  &.h5,
+  &.h6 {
+    font-size: $fz-sm;
+    line-height: $lh-sm;
+  }
+}

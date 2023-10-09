@@ -1,0 +1,50 @@
+@import "src/styles/variables";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  .input {
+    height: 40px;
+    padding: 5px;
+    font-size: $fz-sm;
+    color: #000000;
+    min-width: 18em;
+    max-width: 20em;
+
+    &::placeholder {
+      color: $caption;
+    }
+
+    &.search-input {
+      padding: 5px 40px 5px 15px;
+    }
+
+    &[type="number"] {
+      /* Chrome, Safari, Edge, Opera */
+      &::-webkit-outer-spin-button,
+      &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+
+      -moz-appearance: textfield;
+    }
+  }
+
+  .label {
+    font-weight: $fw-bold;
+    font-size: $fz-sm;
+    line-height: $lh-sm;
+    flex-basis: max-content;
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+
+  &.labelInline {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

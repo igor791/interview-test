@@ -1,0 +1,19 @@
+@import "src/styles/variables";
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  padding: 5px;
+  background-color: $bg;
+}
+
+.logo {
+  color: $action-bg;
+}

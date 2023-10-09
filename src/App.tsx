@@ -1,26 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { observer } from "mobx-react-lite";
 
-function App() {
+import styles from "./App.module.scss";
+import { MediaList, Navbar } from "./features";
+import { Heading } from "components";
+import { useStore } from "AppContext";
+
+const App: React.FC = observer(() => {
+  const store = useStore();
+
+  React.useLayoutEffect(() => {
+    store.readMedias();
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main className={styles.main}>
+      <Navbar />
+      {store.isLoading && <Heading size="h1">Loading...</Heading>}
+      {!store.isLoading && <MediaList list={store.mediaList} />}
+    </main>
   );
-}
+});
 
 export default App;

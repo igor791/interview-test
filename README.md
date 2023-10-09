@@ -1,6 +1,38 @@
-# Getting Started with Create React App
+# Interview test
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was created to practice with `RxJS` and `Mobx`. The main idea is to create a CRUD application for different types of `media`.
+
+## This project was created with next tehnologies:
+
+- `Typescript` - types for JS (https://www.typescriptlang.org)
+- `ReactJS` - create components (https://react.dev)
+- `SASS/SCSS` - style components https://sass-lang.com
+- `RxJS` - mock API (https://www.learnrxjs.io)
+- `Mobx` - store (https://mobx.js.org)
+
+## Project structure
+
+```
+.
+├── build                   # Compiled files
+├── src                     # Source files
+├──── api                   # Mocked API with RxJS to simulate BE API calls
+├──── components            # UI reusable components
+├──── features              # "Business" components
+├──── store                 # Mobx store and data structure for the application
+├──── styles                # Global styles/variables
+├──── types                 # Global types
+├──── App.tsx               # The main component
+├──── AppContext.tsx        # The main context that loads store to share with child components
+├──── index.tsx             # Init file to inject components into html and to create store
+├── LICENSE
+└── README.md
+```
+
+## Project tools
+
+- `eslint` - adds code styling rules
+- `prettier` - format the code and maintain consistency throughout the project
 
 ## Available Scripts
 
@@ -28,19 +60,3 @@ The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
